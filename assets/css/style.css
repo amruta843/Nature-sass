@@ -103,6 +103,31 @@ body {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+.btn-text, .btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  text-decoration: none;
+  padding: .3rem;
+  display: inline-block;
+  text-transform: capitalize;
+  transition: all .2s ease-in-out;
+  border-bottom: 1px solid #55c57a; }
+  .btn-text span, .btn-text:link span, .btn-text:visited span {
+    display: inline-block;
+    transition: all .4s ease-in-out; }
+
+.btn-text:hover, .btn-text:focus {
+  background-color: #55c57a;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn-text:hover > span, .btn-text:focus > span {
+    transform: translateX(3px); }
+
+.btn-text:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
 .composition {
   position: relative; }
   .composition-img {
